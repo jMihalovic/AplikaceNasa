@@ -22,7 +22,7 @@ using System.IO;
 namespace AplikaceNasa
 {
     /// <summary>
-    /// Interakční logika pro MainWindow.xaml
+    /// Bohužel se mi nedokázalo API zprovoznit. API volám se správným odkazem, ale neodpovídá mi. 
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -41,13 +41,7 @@ namespace AplikaceNasa
         {
             InitializeComponent();
             ZiskejOnlineData();
-            while(info == null)
-            {
-
-
-
-            }
-
+            System.Threading.Thread.Sleep(5000);
             string s;
             StreamReader sr = new StreamReader("Json.txt");
             s = sr.ReadToEnd();

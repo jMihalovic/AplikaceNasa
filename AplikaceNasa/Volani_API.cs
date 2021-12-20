@@ -11,7 +11,6 @@ namespace AplikaceNasa
         {
             using (var http = new HttpClient())
             {
-
                 var request = await http.GetAsync(odkaz);
 
                 if (request.IsSuccessStatusCode)
