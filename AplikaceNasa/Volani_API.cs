@@ -7,7 +7,7 @@ namespace AplikaceNasa
     public class Volani_API
     {
         public static async Task<API_Data> 
-            Get(string odkaz, string auth = null)
+            Get(string odkaz)
         {
             using (var http = new HttpClient())
             {
